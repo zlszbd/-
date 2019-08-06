@@ -1,0 +1,662 @@
+/*公用的css common*/
+body{
+	font-family:"Microsoft YaHei",sans-serif;
+	font-size:14px;
+	color:#333;
+}
+a{
+	color:#333;
+}
+a:hover{
+	color:#333;
+	text-decoration:none;
+}
+@font-face{
+	font-family:itheima;
+	src:url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+	url('../fonts/MiFie-Web-Font.svg') format('svg'),
+	url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+	url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+.heima_icon{
+	font-family:itheima;
+}
+.heima_icon_phone::before{
+	content:"\e908";
+}
+.heima_icon_tel::before{
+	content:"\e909";
+}
+.heima_topBar{
+	border:1px solid #ccc;
+	font-size:12px;
+	color:#666;
+	position:relative;
+	z-index:1001;
+}
+.heima_topBar a{
+	color:#666;
+}
+.heima_topBar a:hover{
+	color:#666;
+}
+.heima_topBar>.container>.row>div{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+.heima_topBar>.container>.row>div + div{
+	border-left:1px solid #ccc;
+}
+.heima_app{
+	position:relative;
+	display:block;
+}
+.heima_app img{
+	display:none;
+}
+.heima_app:hover img{
+	display:block;
+	position:absolute;
+	top:40px;
+	left:50%;
+	border:1px solid #ccc;
+	border-top:none;
+	margin-left:-60px;
+}
+.heima_topBar .btn-register{
+	background:#E92322;
+	color:#fff;
+	padding:3px 15px;
+}
+.heima_topBar .btn-register:hover{
+	color:#fff;
+	border-color:#E92322;
+}
+.heima_topBar .btn-login:hover{
+	text-decoration:none;
+}
+/*导航栏*/
+.heima_nav{
+	background-color:#fff;
+	border:none;
+	border-bottom:1px solid #ccc;
+	margin-bottom:0;
+}
+.heima_nav .navbar-brand{
+	color:#777;
+	height:80px;
+	line-height:50px;
+}
+.heima_nav .navbar-brand:hover,
+.heima_nav .navbar-brand:focus{
+	color:#5e5e5e;
+	background-color:transparent;
+}
+.heima_nav .navbar-text{
+	color:#777;
+}
+.heima_nav .navbar-nav>li>a{
+	color:#777;
+	height:80px;
+	line-height:50px;
+}
+.heima_nav .navbar-nav>li>a:hover,
+.heima_nav .navbar-nav>li>a:focus{
+	color:#333;
+	background-color:transparent;
+	border-bottom:3px solid #E92322;
+}
+.heima_nav .navbar-nav>.active>a,
+.heima_nav .navbar-nav>.active>a:hover,
+.heima_nav .navbar-nav>.active>a:focus{
+	color:#555;
+	background-color:#fff;
+	border-bottom:3px solid #E92322;
+}
+.heima_nav.navbar-nav>.disabled>a,
+.heima_nav.navbar-nav>.disabled>a:hover,
+.heima_nav.navbar-nav>.disabled>a:focus{
+	color:#ccc;
+	background-color:transparent;
+}
+.heima_nav .navbar-toggle{
+	border-color:#ddd;
+	margin-top:23px;
+	margin-bottom:23px;
+}
+.heima_nav .navbar-toggle:hover,
+.heima_nav .navbar-toggle:focus{
+	background-color:#ddd;
+}
+.heima_nav .navbar-toggle .icon-bar{
+	background-color:#888;
+}
+.heima_nav .navbar-collapse,
+.heima_nav .navbar-form{
+	border-color:#e7e7e7;
+}
+.heima_nav.navbar-nav>.open>a,
+.heima_nav.navbar-nav>.open>a:hover,
+.heima_nav.navbar-nav>.open>a:focus{
+	color:#555;
+	background-color:#e7e7e7;
+}
+@media (max-width:767px){
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a{
+		color:#777;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>li>a:focus{
+		color:#333;
+		background-color:transparent;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a,
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>.active>a:focus{
+		color:#555;
+		background-color:#e7e7e7;
+	}
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a,
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+	.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:focus{
+		color:#ccc;
+		background-color:transparent;
+	}
+}
+.heima_nav .navbar-link{
+	color:#777;
+}
+.heima_nav .navbar-link:hover{
+	color:#333;
+}
+.heima_nav .btn-link{
+	color:#777;
+}
+.heima_nav .btn-link:hover,
+.heima_nav .btn-link:focus{
+	color:#333;
+}
+.heima_nav .btn-link[disabled]:hover,
+fieldset[disabled] .heima_nav .btn-link:hover,
+.heima_nav .btn-link[disabled]:focus,
+fieldset[disabled] .heima_nav .btn-link:focus{
+	color:#ccc;
+}
+/*轮播图*/
+.pc_imageBox{
+	height:410px;
+	width:100%;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.m_imageBox{
+	width:100%;
+	display:block;
+}
+.m_imageBox img{
+	width:100%;
+	display:block;
+}
+/*信息*/
+.heima_info{
+	padding:50px;
+	border-bottom:1px solid #ccc;
+}
+.heima_info > .container{
+	width:910px;
+}
+.heima_info .heima_icon{
+	font-size:30px;
+}
+.heima_info .col-md-4{
+	padding:10px;
+}
+.heima_info a:hover{
+	color:#E92322;
+}
+/*字体图标*/
+.heima_icon_E903::before{
+	content:"\e903"
+}
+.heima_icon_E907::before{
+	content:"\e907"
+}
+.heima_icon_E901::before{
+	content:"\e901"
+}
+.heima_icon_E900::before{
+	content:"\e900"
+}
+.heima_icon_E904::before{
+	content:"\e904"
+}
+.heima_icon_E902::before{
+	content:"\e902"
+}
+/*预约*/
+.heima_book{
+	padding:25px 0;
+	border-bottom:1px solid #ccc;
+}
+.heima_book > .container{
+	width:910px;
+}
+@media screen and (max-width:768px){
+	.heima_book > .container{
+		width:100%;
+	}
+}
+.heima_book .heima_icon{
+	font-size:24px;
+}
+.heima_book a:hover{
+	color:#E92322;
+}
+.heima_book .book_link{
+	color:#E92322;
+	border-bottom:1px dashed #E92322;
+}
+/*字体图标*/
+.heima_icon_E906::before{
+	content:"\e906"
+}
+.heima_icon_E905::before{
+	content:"\e905"
+}
+/*产品*/
+ .heima_product{
+	 background:#f5f5f5;
+	 border-bottom:1px solid #ccc;
+	 padding:30px 0;
+ }
+ .nav-tabs-product{
+	 border-bottom:1px solid #ccc;
+ }
+ .nav-tabs-product>li{
+	 float:left;
+	 padding-left:20px;
+ }
+ .nav-tabs-product>li>a{
+	 margin-right:2px;
+	 line-height:1.42857143;
+	 border-radius:4px 4px 0 0;
+ }
+.nav-tabs-product>li>a:hover{
+	background:#f5f5f5;
+} 
+.nav-tabs-product>li.active>a,
+.nav-tabs-product>li.active>a:hover,
+.nav-tabs-product>li>a:focus{
+	color:#555;
+	cursor:default;
+	border:none;
+	background:#f5f5f5;
+	border-bottom:3px solid #E92322;
+}
+.nav-tabs-product.nav-justified{
+	width:100%;
+	border-bottom:0;
+}
+.nav-tabs-product.nav-justified>li{
+	float:none;
+}
+.nav-tabs-product.nav-justified>li>a{
+	margin-bottom:5px;
+	text-align:center;
+}
+.nav-tabs-product.nav-justified>.dropdown.dropdown-menu{
+	top:auto;
+	left:auto;
+}
+@media (max-width:767px){
+	.nav-tabs-product.nav-justified>li{
+		display:table-cell;
+		width:1%;
+	}
+	.nav-tabs-product.nav-justified>li>a{
+		margin-bottom:0;
+	}
+}
+.nav-tabs-product.nav-justified>li>a{
+	margin-right:0;
+	border-radius:4px;
+}
+.nav-tabs-product.nav-justified>.active>a,
+.nav-tabs-product.nav-justified>.active>a:hover,
+.nav-tabs-product.nav-justified>.active>a:focus{
+	border:1px solid #ddd;
+}
+@media (max-width:767px){
+	.nav-tabs-product.nav-justified>li>a{
+		border-bottom:1px solid #ddd;
+		border-radius:4px 4px 0 0;
+	}
+	.nav-tabs-product.nav-justified>.active>a,
+	.nav-tabs-product.nav-justified>.active>a:hover,
+	.nav-tabs-product.nav-justified>.active>a:focus{
+		border:1px solid #fff;
+	}
+}
+/*页签父盒子*/
+.nav-tabs-product-parent{
+	width:100%;
+	overflow:hidden;
+}
+/*产品盒子*/
+.product_box{
+	height:150px;
+	width:100%;
+	display:block;
+	background:#fff;
+	box-shadow:2px 2px 3px 1px #d8d8d8;
+	margin-top:20px;
+	font-size:12px;
+	color:#666;
+}
+.product_box p{
+	margin-bottom:0;
+}
+.product_box.active{
+	background:#E92322;
+	position:relative;
+}
+.product_box.active::before{
+	content:"\e915";
+	font-family:heima;
+	position:absolute;
+	top:-7px;
+	left:0;
+	color:#fff;
+	font-size:33px;
+}
+.product_box .product_box_left{
+	overflow:hidden;
+}
+.product_box .product_box_left h3{
+	font-size:16px;
+	margin:10px 0;
+}
+.product_box.active .product_box_left{
+	color:#fff;
+}
+.product_box .product_box_left > div{
+	margin-top:10px;
+}
+.product_box .product_box_left > div >p{
+	width:100%;
+	height:20px;
+	overflow:hidden;
+}
+.product_box .product_box_left .progress{
+	height:10px;
+}
+.product_box .product_box_right{
+	float:right;
+	width:108px;
+	height:100%;
+	text-align:center;
+	position:relative;
+	border-left:1px dashed #ccc;
+}
+.product_box .product_box_right::before,
+.product_box .product_box_right::after{
+	content:"";
+	position:absolute;
+	left:-6px;
+	width:12px;
+	height:12px;
+	border-radius:6px;
+	background:#f5f5f5;
+}
+.product_box .product_box_right::before{
+	top:-6px;
+	box-shadow:0 -2px  2px#d8d8d8 inset;
+}
+.product_box .product_box_right::after{
+	bottom:-6px;
+	box-shadow:0 2px 2px #d8d8d8 inset;
+}
+.product_box_right p:first-of-type{
+	margin-bottom:0;
+	margin-top:25px;
+	color:#E92322;
+}
+.product_box.active .product_box_right P{
+	color:#fff;
+}
+.product_box_right p:first-of-type b{
+	font-size:44px;
+}
+.product_box_right p:first-of-type sub{
+	bottom:0;
+}
+/*工具提示*/
+.toolTip_box{
+	position:absolute;
+	top:15px;
+	left:0;
+	text-align:center;
+	width:100%;
+}
+.toolTip_box > span{
+	height:15px;
+	width:15px;
+	text-align:center;
+	line-height:15px;
+	display:inline-block;
+}
+.toolTip_box .bao{
+	color:green;
+	border:1px solid green;
+}
+.toolTip_box .bei{
+	color:red;
+	border:1px solid red;
+}
+/*新闻*/
+.heima_news{
+	padding:20px 0;
+}
+.heima_news .news_title{
+	width:100%;
+	border-bottom:1px solid #ccc;
+	font-size:20px;
+	height:50px;
+	text-align:center;
+	position:relative;
+}
+.heima_news .news_title::after{
+	content:"";
+	position:absolute;
+	bottom:-3px;
+	right:-6px;
+	width:6px;
+	height:6px;
+	border:1px solid #ccc;
+	border-radius:3px;
+}
+.heima_news .news_line{
+	position:absolute;
+	top:0;
+	left:45px;
+	height:100%;
+	border-left:1px dashed #ccc;
+	width:1px;
+}
+/*新闻tab*/
+.nav-tabs-news{
+	border:none;
+}
+.nav-tabs-news>li{
+	float:left;
+	margin-bottom:-1px;
+}
+.nav-tabs-news>li>a{
+	margin-right:0;
+	border:none;
+	height:60px;
+	line-height:60px;
+	width:60px;
+	border-radius:30px;
+	background:#ccc;
+	margin-bottom:60px;
+	padding:0;
+	text-align:center;
+}
+/*针对小屏幕设备*/
+@media screen and(max-width:992px) and (min-width:768px){
+	.nav-tabs-news>li>a{
+		margin:20px 40px;
+	}
+}
+/*针对超小屏幕设备*/
+@media screen and(max-width:768px){
+	.nav-tabs-news>li{
+		width:25%;
+	}
+	.nav-tabs-news>li>a{
+		margin:30px 0;
+	}
+}
+@media(max-width:414px){
+	.heima_news .tab-pane>ul{
+		margin-left:-35px;
+		font-size:5px;
+	}
+	.heima_news .tab-pane>ul>li{
+		padding:0px;
+	}
+}
+.nav-tabs-news>li:last-child>a{
+	margin-bottom:0;
+}
+.nav-tabs-news>li>a>.heima_icon{
+	font-size:30px;
+	color:#fff;
+}
+.nav-tabs-news>li>a:hover{
+	border:none;
+	background:#E92322;
+}
+.nav-tabs-news>li.active>a,
+.nav-tabs-news>li.active>a:hover,
+.nav-tabs-news>li.active>a:focus{
+	color:#555;
+	cursor:default;
+	background-color:#E92322;
+	border:none;
+	border-bottom-color:transparent;
+}
+.nav-tabs-news.nav-justified{
+	width:100%;
+	border-bottom:0;
+}
+.nav-tabs-news.nav-justified>li{
+	float:none;
+}
+.nav-tabs-news.nav-justified>li>a{
+	margin-bottom:5px;
+	text-align:center;
+}
+.nav-tabs-news.nav-justified>.dropdown.dropdown-menu{
+	top:auto;
+	left:auto;
+}
+@media(min-width:768px){
+	.nav-tabs-news.nav-justified>li{
+		display:table-cell;
+		width:1%;
+		}
+		.nav-tabs-news.nav-justified>li>a{
+			margin-bottom:0;
+		}
+}
+.nav-tabs-news.nav-justified>li>a{
+	margin-right:0;
+	border-radius:4px;
+}
+.nav-tabs-news.nav-justified>.active>a,
+.nav-tabs-news.nav-justified>.active>a:hover,
+.nav-tabs-news.nav-justified>.active>a:focus{
+	border:1px solid #ddd;
+}
+@media(min-width:768px){
+	.nav-tabs-news.nav-justified>li>a{
+		border-bottom:1px solid #ddd;
+		border-radius:4px 4px 0 0;
+	}
+	.nav-tabs-news.nav-justified>.active>a,
+	.nav-tabs-news.nav-justified>.active>a:hover,
+	.nav-tabs-news.nav-justified>.active>a:focus{
+		border-bottom-color:#fff;
+	}
+}
+.heima_new .tab-pane>ul{
+	list-style:none;
+}
+.heima_new .tab-pane>ul>li{
+	padding:10px;
+}
+/*字体图标*/
+.heima_icon_new01::before{
+	content:"\e90e";
+}
+.heima_icon_new02::before{
+	content:"\e90f";
+}
+.heima_icon_new03::before{
+	content:"\e910";
+}
+.heima_icon_new04::before{
+	content:"\e911";
+}
+/*合作伙伴*/
+.heima_partner{
+	background:#f5f5f5;
+	padding:20px 0;
+	text-align:center;
+}
+.heima_partner ul{
+	list-style:none;
+	display:inline-block;
+	padding-left:0;
+}
+.heima_partner ul li{
+	float:left;
+	font-size:60px;
+	margin-left:30px;
+}
+.heima_partner ul li:first-child{
+	margin-left:0;
+}
+/*字体图标*/
+.heima_icon_partner01::before{
+	content:"\e946";
+}
+.heima_icon_partner02::before{
+	content:"\e92f";
+}
+.heima_icon_partner03::before{
+	content:"\e92e";
+}
+.heima_icon_partner04::before{
+	content:"\e92a";
+}
+.heima_icon_partner05::before{
+	content:"\e929";
+}
+.heima_icon_partner06::before{
+	content:"\e931";
+}
+.heima_icon_partner07::before{
+	content:"\e92c";
+}
+.heima_icon_partner08::before{
+	content:"\e92b";
+}
+.heima_icon_partner09::before{
+	content:"\e92d";
+}

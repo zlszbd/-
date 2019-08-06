@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		html,body{
+			width: 100%;
+			height: 110%;
+			background: url(img/bj.jpg);
+			background-size: 100% 100%;
+		}
+			#content1{
+				width: 300px;
+				height: 300px;
+				background-image: url(img/top/fengche.png);
+				background-size: 100% 100%;
+				position: relative;
+				left: 200px;
+				margin-left: -100px;
+				top: 200px;
+				margin-top: -100px;
+				animation: donghua 5s linear forwards;
+			}
+			#content2{
+				width: 300px;
+				height: 300px;
+				background-image: url(img/top/fengche.png);
+				background-size: 100% 100%;
+				position: absolute;
+				right: 100px;
+				/*margin-left: -100px;*/
+				top: 100px;
+				animation: donghua 5s linear forwards;
+			}
+			#content1:hover{
+				/**
+				 * 设置动画状态
+				 * paused：停止
+				 */
+				animation-play-state: paused;
+			}
+			/*
+			 * 使用动画
+			1、被执行的动画
+			2、执行动画单次时间
+			3、执行速度
+			4、执行几次
+				infinite:重复执行*/
+			@keyframes donghua{
+/*				开始*/
+				from{
+					transform:rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			#content2:hover{
+				/**
+				 * 设置动画状态
+				 * paused：停止
+				 */
+				animation-play-state: paused;
+			}
+			/*
+			 * 使用动画
+			1、被执行的动画
+			2、执行动画单次时间
+			3、执行速度
+			4、执行几次
+				infinite:重复执行*/
+			@keyframes donghua{
+/*				开始*/
+				from{
+					transform:rotate(0deg);
+				}
+				to{
+					transform: rotate(360deg);
+				}
+			}
+			#text{
+				width: 600px;
+				height: 50px;
+				position: relative;
+				top: -200px;
+				line-height: 50px;
+				left: 430px;
+				font-size:20px;
+				font-weight: 200;
+				/*border: 1px solid red;*/
+			}
+			#d4{
+				width: 350px;
+				height: 250px;
+				position:relative;
+				top:-70px;
+				left: 50%;
+				margin-left: -200px;
+				/*border: 1px solid red;*/
+				
+			}
+			.span{
+				color: #fff;
+			}
+			
+			.but1{
+					position: relative;
+					top: 20px;
+					left: 52px;
+			}
+			.but2{
+					position: relative;
+					top: 40px;
+					left: 40px;
+			}
+			.box_1{
+				width: 70px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				color: orange;
+				position: relative;
+				top: 110px;
+				left: -180px;
+			}
+			#but4{
+				width: 70px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				color: orange;
+				position: relative;
+				top: 85px;
+				left: 230px;
+				
+			}
+			.box_2{
+				position: relative;
+				bottom: -150px;
+			}
+			#but6{position: relative;
+			left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content1"></div>
+		<div id="text">
+			<h1>是兄弟就来砍我游戏官方网站</h1>
+		</div>
+		<div id="d4">
+			<form>
+				<font class="but1">用户名:</font><input type="text" class="but1"/><br />
+				<font class="but2">用户密码:</font><input type="password" class="but2"/>
+				<input type="button" value="登陆" id="but3" class="box_1"><input type="button" value="取消" id="but4" class="box_1">
+				<input type="checkbox"  id="but5" class="box_2"><font class="box_2">记住密码</font>
+				<span id="but6" class="box_2"><a href="#" style="color: black; text-decoration: none;">忘记密码</a></span>
+			</form>	
+		</div>
+		<div id="content2"></div>
+	</body>
+</html>
