@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="text"/>
+		<!--<button>猜一猜</button>-->
+		<script>
+//			var button = document.getElementsByTagName("button");
+			var num = document.getElementById('text');
+			var random = Math.ceil(Math.random()*100);
+			/*button[0].onclick = function(){
+				var mydata = parseInt(num.value);
+				if(mydata===random){
+					alert('恭喜你猜对了！');
+				}else if(mydata>random){
+					alert('太大了');
+					
+				}else if(mydata<random){
+					alert('太小了');
+					
+				}else{
+					alert('请输入正确的值');
+					
+				}
+				
+			}*/
+			
+	    	num.onkeyup = function(e){
+	    		if(e.keyCode==13){
+	    			var mydata = parseInt(num.value);
+					if(mydata===random){
+						alert('恭喜你猜对了！');
+					}else if(mydata>random){
+						alert('太大了');
+						
+					}else if(mydata<random){
+						alert('太小了');
+						
+					}else{
+						alert('请输入正确的值');
+						
+					}
+	    		}
+	    		
+	    	}
+		</script>
+	</body>
+</html>
